@@ -23,6 +23,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/sssss', function () {
+    return view('layouts.socialite');
+});
+
 route::get('/check', [HomeController::class, 'check'])->middleware(['auth', 'admin']); // admin check
 
 
